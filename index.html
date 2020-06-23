@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>hls-web-player</title>
+        <meta charset="utf8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://cdn.plyr.io/3.6.2/plyr.css" />
+    </head>
+
+    <body>
+        <nav class="pref-menu">
+            <div class="pref-dropdown">
+                <div class="pref-dropdown-label">Choose quality</div>
+                <div class="pref-dropdown-menu">
+                    <ul id="submenu" class="pref-dropdown-submenu">
+                        <li onclick="changeQuality(this.id)">not set yet</li>
+                        <li onclick="changeQuality(this.id)">not set yet</li>
+                        <li onclick="changeQuality(this.id)">not set yet</li>
+                        <li onclick="changeQuality(this.id)">not set yet</li>
+                        <li onclick="changeQuality(this.id)">not set yet</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="pref-dropdown">
+                <div class="pref-dropdown-label">Choose playlist</div>
+                <div class="pref-dropdown-menu">
+                    <ul class="pref-dropdown-submenu">
+                        <li id="bunny" onclick="changePlaylist(this.id)">Buck Bunny</li>
+                        <li id="lab" onclick="changePlaylist(this.id)">Akamai test playlist</li>
+                        <li id="yt" onclick="changePlaylist(this.id)">Advertisment</li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="content-wrapper row">
+            <div class="video-wrapper column-6"> 
+                <video id="video" class="player" controls crossorigin disablePictureInPicture>
+                </video>
+
+            </div>
+            <div id="video-info" class="video-info column-6">
+                <p>Informacje o playbacku</p>
+            </div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/hls.js@0.13.2/dist/hls.min.js"></script>
+      <!-- <script src="https://cdn.jsdelivr.net/npm/plyr@3.6.2/dist/plyr.min.js"></script>-->
+      <script src="https://cdn.plyr.io/3.6.2/plyr.js"></script>
+        <script src="handleVideo.js"></script>
+
+
+    </body>
+
+
+</html>
