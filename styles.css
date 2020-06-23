@@ -56,6 +56,8 @@ body * + * {
   text-align: center;
   color: #1F1F1F;
   background-color: #F1FFFA;
+  padding: 0.2em 0;
+  white-space: nowrap;
 }
 .pref-dropdown-submenu li:hover {
   background-color: #1F1F1F;
